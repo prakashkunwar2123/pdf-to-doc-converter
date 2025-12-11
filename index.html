@@ -2,19 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PDF to Word Converter</title>
+  <title>Free PDF to Word Converter</title>
+  <meta name="description" content="Free online PDF to Word converter. Fast, simple, and private. Convert PDF files to editable Word documents in seconds.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>PDF to Word Converter</h1>
-    <input type="file" id="pdfFile" accept="application/pdf">
-    <button onclick="convertPDF()">Convert</button>
+  <header>
+    <h2>PDFToolsHub</h2>
+  </header>
 
-    <p id="status"></p>
-  </div>
+  <section class="hero">
+    <h1>PDF to Word Converter</h1>
+    <p>Fast. Simple. Free. Convert your PDF file to an editable DOC file without losing your privacy.</p>
+  </section>
+
+  <section class="tool-box">
+    <div class="upload-area">
+      <input type="file" id="pdfFile" accept="application/pdf">
+      <button onclick="convertPDF()">Convert</button>
+      <p id="status"></p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <h2>How this converter works</h2>
+    <p>This tool extracts text from your PDF and creates a Word document. Everything runs inside your browser, so your file never leaves your device.</p>
+
+    <h2>Why use this tool</h2>
+    <ul>
+      <li>Free and unlimited</li>
+      <li>No signup required</li>
+      <li>Your files stay private</li>
+      <li>Fast and simple for everyday use</li>
+    </ul>
+
+    <h2>Supported Conversions</h2>
+    <p>More tools coming soon:</p>
+    <ul>
+      <li>PDF to DOCX</li>
+      <li>PDF to TXT</li>
+      <li>JPG to PDF</li>
+      <li>PNG to PDF</li>
+      <li>Compress PDF</li>
+      <li>Merge PDF</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 PDFToolsHub. Free PDF Utilities.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
