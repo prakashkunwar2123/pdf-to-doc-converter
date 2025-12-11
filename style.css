@@ -1,17 +1,70 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
   margin: 0;
-  padding: 40px;
+  background: #f8f8f8;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
 
-.container {
-  width: 100%;
-  max-width: 500px;
-  margin: auto;
-  background: white;
+header {
   padding: 20px;
-  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.tool-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.upload-area {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+button {
+  margin-top: 15px;
+  background: #4a60ff;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #3a4ce0;
+}
+
+.content-section {
+  max-width: 800px;
+  margin: 50px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.content-section h2 {
+  margin-top: 30px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: white;
+  text-align: center;
+  font-size: 14px;
 }
