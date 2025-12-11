@@ -7,8 +7,8 @@ async function convertPDF() {
 
   document.getElementById("status").innerText = "Converting...";
 
-  let fileReader = new FileReader();
-  fileReader.onload = async function () {
+  let reader = new FileReader();
+  reader.onload = async function () {
     let typedArray = new Uint8Array(this.result);
     let pdf = await pdfjsLib.getDocument(typedArray).promise;
 
@@ -21,13 +21,14 @@ async function convertPDF() {
     }
 
     let blob = new Blob([textContent], { type: "application/msword" });
+
     let link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
     link.download = "converted.doc";
     link.click();
 
     document.getElementById("status").innerText = "Done!";
-  }
+  };
 
-  fileReader.readAsArrayBuffer(file);
+  reader.readAsArrayBuffer(file);
 }
